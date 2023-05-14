@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using JetBrains.Annotations;
@@ -107,7 +107,7 @@ public static class InnovationArtillerist
             .SetEffectDescription(
                 EffectDescriptionBuilder
                     .Create(MassCureWounds)
-                    .SetDurationData(DurationType.Minute, 1)
+                    .SetDurationData(DurationType.UntilLongRest, 1)
                     .SetTargetingData(Side.Ally, RangeType.Self, 0, TargetType.Sphere, 2)
                     .SetParticleEffectParameters(MassCureWounds)
                     .SetEffectForms(
